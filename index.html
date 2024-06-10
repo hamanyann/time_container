@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- 入力欄 -->
+    <div class="container-extend">
+      <div class="input-area">
+        <input type="date" id="date" class="form-control mb-2" />
+        <div class="time-wrapper">
+          <input type="time" id="start-time" class="form-control mb-2" />
+          <input type="time" id="end-time" class="form-control mb-2" />
+        </div>
+
+        <input
+          placeholder="勉強内容"
+          id="add-text"
+          class="form-control mb-2"
+          required
+        />
+        <button id="add-button" class="btn btn-primary">登録</button>
+      </div>
+    </div>
+    <div class="container-extend table-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">月日</th>
+            <th scope="col">開始</th>
+            <th scope="col">終了</th>
+            <th scope="col">勉強内容</th>
+            <th scope="col">合計時間</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider" id="todo-list">     
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
